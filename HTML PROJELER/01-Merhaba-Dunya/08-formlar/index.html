@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form islemleri</title>
+  </head>
+  <body>
+    <h1>Kayıt formu</h1>
+    <form action="server/kayit.js">
+      <p>
+        <input type="hidden" name="id" id="123456" />
+      </p>
+      <p>
+        <label for="ad">Adınız</label>
+        <input id="ad" type="text" placeholder="Adınız" />
+      </p>
+      <p>
+        <label for="soyad">Soyadınız</label>
+        <input type="text" id="soyad" />
+      </p>
+      <p>
+        <label for="sifre">Şifreniz</label>
+        <input type="password" id="sifre" />
+      </p>
+
+      <p>
+        <label for="deneyim">Deneyim</label>
+        <input type="number" name="" id="deneyim" />
+      </p>
+
+      <p>
+        <label>Hobiler</label> <br />
+
+        <input type="checkbox" name="Futbol" id="futbol" value="futbol" />
+        <label for="futbol">Futbol</label>
+        <br />
+
+        <input type="checkbox" name="voleybol" value="voleybol" id="voleybol" />
+        <label for="voleybol">Voleybol</label>
+        <br />
+        <input
+          type="checkbox"
+          name="basketbol"
+          value="basketbol"
+          id="basketbol"
+        />
+        <label for="basketbol">Basketbol</label>
+      </p>
+      <p>
+        <input type="button" value="Gönder" />
+        <input type="submit" value="Kontrol Et" />
+        <input type="reset" value="Temizle" />
+      </p>
+      <p>
+        <label>Cinsiyet</label>
+        <br />
+        <input type="radio" name="cinsiyet" id="bay" value="erkek" />
+        <label for="bay">Bay</label>
+        <br />
+        <input type="radio" name="cinsiyet" id="bayan" value="bayan" />
+        <label for="bayan">Bayan</label>
+
+        <br />
+        <label for="avatar">Avatar</label>
+        <input type="file" name="Avatar" id="avatar" />
+
+        <br />
+        <label for="tarih">Doğum Tarihi</label>
+        <input type="date" name="tarih" id="tarih" />
+
+        <br />
+        <label for="dogum">Dogum yeri</label>
+        <select name="dogum_yeri" id="" dogum_yeri>
+          <option value="1">Adıyaman</option>
+          <option value="2">Ankara</option>
+          <option value="3">Antalya</option>
+          <option value="4">İstanbul</option>
+        </select>
+      </p>
+    </form>
+  </body>
+</html>
