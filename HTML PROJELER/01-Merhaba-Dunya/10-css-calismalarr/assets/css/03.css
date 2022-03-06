@@ -1,0 +1,9 @@
+.menu {
+  background-color: rgb(204, 188, 188);
+  text-align: center;
+  width: 300px;
+}
+.aktif {
+  background-color: cadetblue;
+  color: white;
+}
